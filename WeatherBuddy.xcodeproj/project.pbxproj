@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		B6A9475C258D009900B33030 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A9475B258D009900B33030 /* AppDelegate.swift */; };
 		B6A9475E258D009900B33030 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A9475D258D009900B33030 /* SceneDelegate.swift */; };
-		B6A94760258D009900B33030 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A9475F258D009900B33030 /* ViewController.swift */; };
-		B6A94763258D009900B33030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A94761258D009900B33030 /* Main.storyboard */; };
 		B6A94765258D009D00B33030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A94764258D009D00B33030 /* Assets.xcassets */; };
 		B6A94768258D009D00B33030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A94766258D009D00B33030 /* LaunchScreen.storyboard */; };
 		B6A94773258D009E00B33030 /* WeatherBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A94772258D009E00B33030 /* WeatherBuddyTests.swift */; };
 		B6A9477E258D009E00B33030 /* WeatherBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A9477D258D009E00B33030 /* WeatherBuddyUITests.swift */; };
+		B6A947A0258D015600B33030 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A9479F258D015600B33030 /* WeatherViewController.swift */; };
+		B6A947A8258D01B200B33030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A947A7258D01B200B33030 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,6 @@
 		B6A94758258D009900B33030 /* WeatherBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A9475B258D009900B33030 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6A9475D258D009900B33030 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B6A9475F258D009900B33030 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B6A94762258D009900B33030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6A94764258D009D00B33030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6A94767258D009D00B33030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6A94769258D009D00B33030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		B6A94779258D009E00B33030 /* WeatherBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A9477D258D009E00B33030 /* WeatherBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherBuddyUITests.swift; sourceTree = "<group>"; };
 		B6A9477F258D009E00B33030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A9479F258D015600B33030 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		B6A947A7258D01B200B33030 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = WeatherBuddy/Main.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +101,9 @@
 			children = (
 				B6A9475B258D009900B33030 /* AppDelegate.swift */,
 				B6A9475D258D009900B33030 /* SceneDelegate.swift */,
-				B6A9475F258D009900B33030 /* ViewController.swift */,
-				B6A94761258D009900B33030 /* Main.storyboard */,
+				B6A9478E258D00C000B33030 /* Model */,
+				B6A9478F258D00C700B33030 /* View */,
+				B6A94790258D00CC00B33030 /* Controller */,
 				B6A94764258D009D00B33030 /* Assets.xcassets */,
 				B6A94766258D009D00B33030 /* LaunchScreen.storyboard */,
 				B6A94769258D009D00B33030 /* Info.plist */,
@@ -126,6 +127,29 @@
 				B6A9477F258D009E00B33030 /* Info.plist */,
 			);
 			path = WeatherBuddyUITests;
+			sourceTree = "<group>";
+		};
+		B6A9478E258D00C000B33030 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6A9478F258D00C700B33030 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6A947A7258D01B200B33030 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6A94790258D00CC00B33030 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6A9479F258D015600B33030 /* WeatherViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +255,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A947A8258D01B200B33030 /* Main.storyboard in Resources */,
 				B6A94768258D009D00B33030 /* LaunchScreen.storyboard in Resources */,
 				B6A94765258D009D00B33030 /* Assets.xcassets in Resources */,
-				B6A94763258D009900B33030 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +282,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A94760258D009900B33030 /* ViewController.swift in Sources */,
 				B6A9475C258D009900B33030 /* AppDelegate.swift in Sources */,
+				B6A947A0258D015600B33030 /* WeatherViewController.swift in Sources */,
 				B6A9475E258D009900B33030 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,14 +320,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B6A94761258D009900B33030 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6A94762258D009900B33030 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B6A94766258D009D00B33030 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
