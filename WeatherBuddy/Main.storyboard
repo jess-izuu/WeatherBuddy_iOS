@@ -111,6 +111,12 @@
                             <constraint firstItem="Qev-Gz-9n2" firstAttribute="leading" secondItem="nGB-HQ-MUQ" secondAttribute="leading" id="wnE-FE-Rii"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="UFr-ur-Zf6" id="ISF-yL-unF"/>
+                        <outlet property="conditionImage" destination="Tge-sJ-sZU" id="jpY-S9-zvd"/>
+                        <outlet property="searchTextField" destination="sic-fr-NPa" id="rEA-Dd-2ZD"/>
+                        <outlet property="temperatureLabel" destination="3rc-ke-gMh" id="fmk-SP-kv0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGr-Hf-f3K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
