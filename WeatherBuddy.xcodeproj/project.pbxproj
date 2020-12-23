@@ -17,6 +17,7 @@
 		B6A947A8258D01B200B33030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A947A7258D01B200B33030 /* Main.storyboard */; };
 		B6B78CBE2592C453001D7E52 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B78CBD2592C453001D7E52 /* WeatherModel.swift */; };
 		B6B78CC32592C525001D7E52 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B78CC22592C525001D7E52 /* WeatherData.swift */; };
+		B6B78CC82592CABE001D7E52 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B78CC72592CABE001D7E52 /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B6A947A7258D01B200B33030 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = WeatherBuddy/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		B6B78CBD2592C453001D7E52 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		B6B78CC22592C525001D7E52 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		B6B78CC72592CABE001D7E52 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				B6B78CBD2592C453001D7E52 /* WeatherModel.swift */,
 				B6B78CC22592C525001D7E52 /* WeatherData.swift */,
+				B6B78CC72592CABE001D7E52 /* WeatherManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6B78CC82592CABE001D7E52 /* WeatherManager.swift in Sources */,
 				B6A9475C258D009900B33030 /* AppDelegate.swift in Sources */,
 				B6B78CC32592C525001D7E52 /* WeatherData.swift in Sources */,
 				B6A947A0258D015600B33030 /* WeatherViewController.swift in Sources */,
